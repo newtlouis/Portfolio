@@ -1,0 +1,25 @@
+.introduction{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+    }
+}
+
+.logos{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+}

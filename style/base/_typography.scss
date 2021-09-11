@@ -1,0 +1,28 @@
+a{
+    color: $tertiary__color;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.hello{
+    color: $tertiary__color;
+    font-size: 30px;
+}
+
+.name{
+    color: $tertiary__color;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.job{
+    color: $tertiary__color;
+    font-size: 30px;
+
+    &__list{
+        font-weight: bolder;
+        font-size: 35px;
+        color: rgb(219, 0, 0);
+
+    }
+}

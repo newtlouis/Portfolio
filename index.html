@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Louis M.</title>
 </head>
+
 <body>
     <main>
         <header>
@@ -20,123 +23,83 @@
             <div class="introduction__content">
                 <p class="hello">Hello, my name is</p>
                 <h1 class="name">Louis Michel</h1>
-                <p class="job">And I am a Full Stack Developper</p>
+                <p class="job">And I am a <span class="job__list">Full Stack Developper</span></p>
             </div>
             <div class="introduction__photo">
-                <img src="" alt="">
+                <img src="http://www.placehold.it/400x500" alt="">
             </div>
         </section>
 
-        <section  data-scroll-section class="logos">
-            <div class="logos__frontend">
+        <section data-scroll-section class="logos">
+            <div class="logos__list">
                 <h2>Frontend</h2>
                 <div class="img">
-                    <img 
-                    data-scroll 
-                    data-scroll-delay="0.15"  
-                    data-scroll-speed="3" 
-                    src="images/html-5.png"
-                    alt="logo HTML">
-                <img             
-                    data-scroll 
-                    data-scroll-delay="0.12"  
-                    data-scroll-speed="3"
-                    src="images/css.png"
-                    alt="logo css">
-                <img             
-                    data-scroll 
-                    data-scroll-delay="0.09"  
-                    data-scroll-speed="3"
-                    src="images/JavaScript-logo.png" 
-                    alt="logo javascript">
-                <img             
-                    data-scroll 
-                    data-scroll-delay="0.06"  
-                    data-scroll-speed="3"
-                    src="images/vue.png"
-                    alt="logo Vue.js">
+                    <img data-scroll data-scroll-delay="0.15" data-scroll-speed="3" src="images/html-5.png"
+                        alt="logo HTML">
+                    <img data-scroll data-scroll-delay="0.12" data-scroll-speed="3" src="images/css.png" alt="logo css">
+                    <img data-scroll data-scroll-delay="0.09" data-scroll-speed="3" src="images/JavaScript-logo.png"
+                        alt="logo javascript">
+                    <img data-scroll data-scroll-delay="0.06" data-scroll-speed="3" src="images/vue.png"
+                        alt="logo Vue.js">
                 </div>
             </div>
 
-            <div class="logos__backend">
+            <div class="logos__list">
                 <h2>Frontend</h2>
                 <div class="img">
-                    <img 
-                    data-scroll 
-                    data-scroll-delay="0.15"  
-                    data-scroll-speed="3" 
-                    src="images/html-5.png"
-                    alt="logo Symfony.png">
-                <img             
-                    data-scroll 
-                    data-scroll-delay="0.12"  
-                    data-scroll-speed="3"
-                    src="images/MongoDB.png"
-                    alt="logo MongoDB">
-                <img             
-                    data-scroll 
-                    data-scroll-delay="0.09"  
-                    data-scroll-speed="3"
-                    src="images/MySql.png" 
-                    alt="logo MySql">
-                <img             
-                    data-scroll 
-                    data-scroll-delay="0.06"  
-                    data-scroll-speed="3"
-                    src="images/php.png"
-                    alt="logo php.js">
-                    <img             
-                    data-scroll 
-                    data-scroll-delay="0.03"  
-                    data-scroll-speed="3"
-                    src="images/nodejs-icon.svg"
-                    alt="logo Nodejs">
+                    <img data-scroll data-scroll-delay="0.15" data-scroll-speed="3" src="images/html-5.png"
+                        alt="logo Symfony.png">
+                    <img data-scroll data-scroll-delay="0.12" data-scroll-speed="3" src="images/MongoDB.png"
+                        alt="logo MongoDB">
+                    <img data-scroll data-scroll-delay="0.09" data-scroll-speed="3" src="images/MySql.png"
+                        alt="logo MySql">
+                    <img data-scroll data-scroll-delay="0.06" data-scroll-speed="3" src="images/php.png"
+                        alt="logo php.js">
+                    <img data-scroll data-scroll-delay="0.03" data-scroll-speed="3" src="images/nodejs-icon.svg"
+                        alt="logo Nodejs">
                 </div>
-            </div> 
+            </div>
         </section>
 
         <section class="projects">
             <ul>
-                <li 
-                data-scroll 
-                data-scroll-speed="-8" 
-                data-scroll-direction="horizontal" 
-                class="projects__project">
-                    <a href='https://bdemot.github.io/DeMotBenjamin_3_11012021/' target='_blank' rel="noopener">ohmyfood</a>
+                <li data-scroll data-scroll-speed="-8" data-scroll-direction="horizontal" class="projects__project">
+                    <a href='https://bdemot.github.io/DeMotBenjamin_3_11012021/' target='_blank'
+                        rel="noopener">ohmyfood</a>
                 </li>
-                
+
                 <li class="projects__preview">
-                    <video autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                    <video autoplay loop muted poster="http://www.placehold.it/400x200">
                         <source src="vids/p3.mp4" type="video/mp4">
                     </video>
                     <p class="description">
                         Integration of a website: <br>
                         HTML/CSS<br>
-                        Sass<br> 
-                </p>
+                        Sass<br>
+                    </p>
                 </li>
 
-                
+
             </ul>
-        </section>
-
-
-        <section data-scroll-section id="contact">
-            <a href='https://www.linkedin.com/in/benjamin-de-mot/' target='_blank' title="link to Linkedin" rel="noopener">
-                <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.05" src="images/linkedin.png" alt="Linkedin">
-            </a>
-            <a href='https://github.com/BDeMot' target='_blank' title="link to Github" rel="noopener">
-                <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.15" src="images/github.png" alt="Github">
-            </a>
-            <a href='https://twitter.com/benjamin_mot' target='_blank' title="link to Twitter" rel="noopener">
-                <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.25" src="images/twitter.png" alt="Twitter">
-            </a>
-            <a href='mailto:benjamin.de.mot@gmail.com' title="send an email">
-                <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.35" src="images/email.png" alt="email">
-            </a>
         </section>
     </main>
 
-    <script src="./script/index.js"></script> 
+    <footer data-scroll-section id="contact">
+        <a href='https://www.linkedin.com/in/louis-michel-080827bb/' target='_blank' title="link to Linkedin" rel="noopener">
+            <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.05" src="images/linkedin.png" alt="Linkedin">
+        </a>
+        <a href='https://github.com/newtlouis' target='_blank' title="link to Github" rel="noopener">
+            <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.15" src="images/github.png" alt="Github">
+        </a>
+        <a href='telto:' target='_blank' title="call" rel="noopener">
+            <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.25" src="images/twitter.png" alt="Telephone">
+        </a>
+        <a href='mailto:louis.m.newton@hotmail.fr' title="send an email">
+            <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.35" src="images/email.png" alt="email">
+        </a>
+    </footer>
+
+    <script src="./script/index.js"></script>
 </body>
+
 </html>
