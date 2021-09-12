@@ -44,6 +44,40 @@ h2 {
   margin: 50px 0;
 }
 
+.block {
+  width: 2000px;
+  height: 600px;
+  background-color: #3d3d3c;
+  position: absolute;
+  z-index: 2;
+}
+
+.block__left {
+  bottom: 700px;
+  right: 600px;
+}
+
+.block__right {
+  top: 500px;
+  left: 600px;
+}
+
+.textBlock {
+  position: absolute;
+  z-index: 100;
+  color: #ffa600;
+  font-size: 150px;
+  bottom: 160px;
+}
+
+.textBlock__left {
+  left: 1350px;
+}
+
+.textBlock__right {
+  right: 1400px;
+}
+
 footer {
   height: 60vh;
   display: -webkit-box;
@@ -54,10 +88,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 200px 0;
 }
 
 footer i {
-  font-size: 200px;
+  font-size: 300px;
 }
 
 nav {
@@ -67,9 +102,13 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 10px;
+  z-index: 10;
+  position: relative;
+  background-color: #3d3d3c;
 }
 
 .introduction {
+  margin-bottom: 200px;
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +134,7 @@ nav {
 }
 
 .logos {
+  position: relative;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,18 +147,13 @@ nav {
       justify-content: space-around;
 }
 
-.logos h2 {
-  text-align: center;
-  color: #ffa600;
-}
-
 .logos__title {
   padding: 10px;
   margin: 10px 10px 10px 0;
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #ffa600;
 }
 
 .logos i {
@@ -137,20 +172,37 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 200px;
 }
 
 .img {
+  width: 600px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tech {
   text-align: center;
   color: #3d3d3c;
   font-size: 20px;
+}
+
+.logos__list {
+  position: relative;
+}
+
+.logos__list__left {
+  left: 300px;
+}
+
+.logos__list__right {
+  right: 300px;
 }
 /*# sourceMappingURL=style.css.map */

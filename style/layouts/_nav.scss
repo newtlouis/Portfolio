@@ -2,4 +2,7 @@ nav{
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    z-index: 10;
+    position: relative;
+    background-color: $secondary__color;
 }

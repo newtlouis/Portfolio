@@ -1,0 +1,37 @@
+.block{
+    width: 2000px;
+    height: 600px;
+    background-color: $secondary__color;
+    position: absolute;
+    z-index: 2;
+
+    &__left{
+        bottom: 700px;
+        right: 600px;
+    }
+
+    &__right{
+        top: 500px;
+        left: 600px;
+    }
+}
+
+
+
+.textBlock{
+    position: absolute;
+    z-index: 100;
+    color: $primary__color;
+    font-size: 150px;
+    bottom: 160px;
+
+    &__left{
+        left: 1350px;
+    }
+
+    &__right{
+        right: 1400px;
+    }
+}
+
+

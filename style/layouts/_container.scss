@@ -1,4 +1,5 @@
 .introduction{
+    margin-bottom: 200px;
     height: 90vh;
     display: flex;
     justify-content: space-around;
@@ -13,17 +14,13 @@
 }
 
 .logos{
+    position: relative;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     
 
-    h2{
-        
-        text-align: center;
-        color: $primary__color;
-    }
 
     &__title{
         padding: 10px;
@@ -31,7 +28,7 @@
         width: 220px;
         height: 220px;
         border-radius: 50%;
-        background-color: $tertiary__color;
+        background-color: $primary__color;
     }
 
     i{
@@ -44,13 +41,20 @@
         display: flex;
         justify-content: space-evenly;   
         align-items: center; 
+        margin-bottom: 200px;
     }
 }
 
 .img{
-    // width: 80vw;
+    width: 600px;
+    height: 400px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    // &__left{
+    //     justify-content: right;
+    // }
     
 }
 
@@ -58,4 +62,17 @@
     text-align: center;
     color: $secondary__color;
     font-size: 20px;
+}
+
+.logos__list{
+    position: relative;
+
+    &__left{
+        left: 300px;
+    }
+
+    &__right{
+        right: 300px;
+    }
+
 }
