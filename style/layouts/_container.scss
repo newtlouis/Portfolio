@@ -13,13 +13,49 @@
 }
 
 .logos{
-    height: 90vh;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    
+
+    h2{
+        
+        text-align: center;
+        color: $primary__color;
+    }
+
+    &__title{
+        padding: 10px;
+        margin: 10px 10px 10px 0;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background-color: $tertiary__color;
+    }
+
+    i{
+        font-size: 150px;
+        color: $secondary__color;
+        margin: 5px 25px 30px 25px;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-evenly;   
+        align-items: center; 
+    }
 }
 
 .img{
+    // width: 80vw;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.tech{
+    text-align: center;
+    color: $secondary__color;
+    font-size: 20px;
 }

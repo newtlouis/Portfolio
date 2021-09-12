@@ -6,100 +6,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/2bb2f2a2a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+
     <title>Louis M.</title>
 </head>
 
 <body>
-    <main>
-        <header>
-            <nav>
-                <a href="">About me</a>
-                <a href="">Projects</a>
-                <a href="">Contact me</a>
-            </nav>
-        </header>
+    <header>
+        <nav>
+            <a href="">About me</a>
+            <a href="">Projects</a>
+            <a href="">Contact me</a>
+        </nav>
+    </header>
 
-        <section class="introduction">
-            <div class="introduction__content">
-                <p class="hello">Hello, my name is</p>
-                <h1 class="name">Louis Michel</h1>
-                <p class="job">And I am a <span class="job__list">Full Stack Developper</span></p>
-            </div>
-            <div class="introduction__photo">
-                <img src="http://www.placehold.it/400x500" alt="">
-            </div>
-        </section>
-
-        <section data-scroll-section class="logos">
-            <div class="logos__list">
-                <h2>Frontend</h2>
-                <div class="img">
-                    <img data-scroll data-scroll-delay="0.15" data-scroll-speed="3" src="images/html-5.png"
-                        alt="logo HTML">
-                    <img data-scroll data-scroll-delay="0.12" data-scroll-speed="3" src="images/css.png" alt="logo css">
-                    <img data-scroll data-scroll-delay="0.09" data-scroll-speed="3" src="images/JavaScript-logo.png"
-                        alt="logo javascript">
-                    <img data-scroll data-scroll-delay="0.06" data-scroll-speed="3" src="images/vue.png"
-                        alt="logo Vue.js">
+    <div data-scroll-container>
+        <main>
+            <section data-scroll-section class="introduction">
+                <div class="introduction__content">
+                    <p class="hello">Hello, my name is</p>
+                    <h1 class="name">Louis Michel</h1>
+                    <p class="job">And I am a <span class="job__list">Full Stack Developper</span></p>
                 </div>
-            </div>
-
-            <div class="logos__list">
-                <h2>Frontend</h2>
-                <div class="img">
-                    <img data-scroll data-scroll-delay="0.15" data-scroll-speed="3" src="images/html-5.png"
-                        alt="logo Symfony.png">
-                    <img data-scroll data-scroll-delay="0.12" data-scroll-speed="3" src="images/MongoDB.png"
-                        alt="logo MongoDB">
-                    <img data-scroll data-scroll-delay="0.09" data-scroll-speed="3" src="images/MySql.png"
-                        alt="logo MySql">
-                    <img data-scroll data-scroll-delay="0.06" data-scroll-speed="3" src="images/php.png"
-                        alt="logo php.js">
-                    <img data-scroll data-scroll-delay="0.03" data-scroll-speed="3" src="images/nodejs-icon.svg"
-                        alt="logo Nodejs">
+                <div class="introduction__photo">
+                    <img src="http://www.placehold.it/400x500" alt="">
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="projects">
-            <ul>
-                <li data-scroll data-scroll-speed="-8" data-scroll-direction="horizontal" class="projects__project">
-                    <a href='https://bdemot.github.io/DeMotBenjamin_3_11012021/' target='_blank'
-                        rel="noopener">ohmyfood</a>
-                </li>
+            <section data-scroll-section class="logos">
 
-                <li class="projects__preview">
-                    <video autoplay loop muted poster="http://www.placehold.it/400x200">
-                        <source src="vids/p3.mp4" type="video/mp4">
-                    </video>
-                    <p class="description">
-                        Integration of a website: <br>
-                        HTML/CSS<br>
-                        Sass<br>
-                    </p>
-                </li>
+                <div class="logos__list">
+                    <!-- <div class="logos__title">
+                        <h2>FRONT</h2>
+                    </div> -->
+
+                    <div class="img">
+                        <div class="tech">
+                            <h3 class="tech__name">HTML</h3>
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="tech">
+                            <h3 class="tech__name">CSS</h3>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="tech">
+                            <h3 class="tech__name">SASS</h3>
+                            <i class="fab fa-sass"></i>
+                        </div>
+                        <div class="tech">
+                            <h3 class="tech__name">JavaScript</h3>
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="tech">
+                            <h3 class="tech__name">VueJs</h3>
+                            <i class="fab fa-vuejs"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logos__list">
+                    <!-- <div class="logos__title">
+                        <h2>BACK</h2>
+                    </div> -->
+                    <div class="img">
+                        <div class="tech">
+                            <h3 class="tech__name">php</h3>
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="tech">
+                            <h3 class="tech__name">Symfony</h3>
+                            <i class="fab fa-symfony"></i>
+                        </div>
+                        <div class="tech">
+                            <h3 class="tech__name">NodeJs</h3>
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="tech">
+                            <h3 class="tech__name">MySql - MongoDB</h3>
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-scroll-section class="projects">
+                <ul>
+                    <li data-scroll data-scroll-speed="-8" data-scroll-direction="horizontal" class="projects__project">
+                        <a href='https://bdemot.github.io/DeMotBenjamin_3_11012021/' target='_blank'
+                            rel="noopener">ohmyfood</a>
+                    </li>
+
+                    <li class="projects__preview">
+                        <video autoplay loop muted poster="http://www.placehold.it/400x200">
+                            <source src="vids/p3.mp4" type="video/mp4">
+                        </video>
+                        <p class="description">
+                            Integration of a website: <br>
+                            HTML/CSS<br>
+                            Sass<br>
+                        </p>
+                    </li>
 
 
-            </ul>
-        </section>
-    </main>
+                </ul>
+            </section>
+        </main>
 
-    <footer data-scroll-section id="contact">
-        <a href='https://www.linkedin.com/in/louis-michel-080827bb/' target='_blank' title="link to Linkedin" rel="noopener">
-            <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.05" src="images/linkedin.png" alt="Linkedin">
-        </a>
-        <a href='https://github.com/newtlouis' target='_blank' title="link to Github" rel="noopener">
-            <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.15" src="images/github.png" alt="Github">
-        </a>
-        <a href='telto:' target='_blank' title="call" rel="noopener">
-            <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.25" src="images/twitter.png" alt="Telephone">
-        </a>
-        <a href='mailto:louis.m.newton@hotmail.fr' title="send an email">
-            <img data-scroll data-scroll-speed='-5' data-scroll-delay="0.35" src="images/email.png" alt="email">
-        </a>
-    </footer>
+        <footer data-scroll-section id="contact">
+            <a href='https://www.linkedin.com/in/louis-michel-080827bb/' target='_blank' title="link to Linkedin"
+                rel="noopener">
+                <i class="fab fa-linkedin"></i> </a>
+            <a href='https://github.com/newtlouis' target='_blank' title="link to Github" rel="noopener">
+                <i class="fab fa-github-square"></i> </a>
+            <a href='tel:+33661955595' target='_blank' title="call" rel="noopener">
+                <i class="fas fa-phone-square-alt"></i>
+            </a>
+            <a href='mailto:louis.m.newton@hotmail.fr' title="send an email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </footer>
+    </div>
 
-    <script src="./script/index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
