@@ -1,0 +1,18 @@
+.introduction{
+    margin-bottom: 200px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+    }
+
+    // img{
+    //     margin-top: 20px;
+    // }
+}

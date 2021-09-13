@@ -1,17 +1,4 @@
-.introduction{
-    margin-bottom: 200px;
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    &__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 30vh;
-    }
-}
+
 
 .logos{
     position: relative;
@@ -28,7 +15,7 @@
         width: 220px;
         height: 220px;
         border-radius: 50%;
-        background-color: $primary__color;
+        background-color: $tertiary__color;
     }
 
     i{
