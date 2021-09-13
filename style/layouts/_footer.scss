@@ -3,10 +3,20 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 200px 0;
+    margin: 300px 0;
 
     i{
         font-size: 300px;
+        color: $secondary__color;
+        transition: all 0.2s ease-in-out;
+
+
+        &:hover{
+            font-size: 350px;
+            color: $tertiary__color;
+        }
     }
+
+    
 }
 
