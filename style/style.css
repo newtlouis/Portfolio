@@ -289,4 +289,44 @@ nav {
       justify-content: space-around;
   height: 30vh;
 }
+
+.job__list {
+  list-style: none;
+  position: relative;
+}
+
+.job__list::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 100%;
+  width: 350px;
+  background-color: #ffa600;
+  border-left: red 2px solid;
+  -webkit-animation: typing 5s steps(30) infinite;
+          animation: typing 5s steps(30) infinite;
+}
+
+@-webkit-keyframes typing {
+  100% {
+    left: 100%;
+    width: 100px;
+  }
+  50% {
+    left: 100%;
+    width: 100px;
+  }
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    width: 100px;
+  }
+  50% {
+    left: 100%;
+    width: 100px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

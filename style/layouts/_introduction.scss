@@ -16,3 +16,32 @@
     //     margin-top: 20px;
     // }
 }
+
+.job__list{
+    list-style: none;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        height: 100%;
+        width: 350px;
+        background-color: $primary__color;
+        border-left: red 2px solid;
+        animation: typing 5s steps(30) infinite;
+    }
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        width: 100px;
+    }
+    
+    50%{
+        left: 100%;
+        width: 100px;
+    }
+}
