@@ -4,17 +4,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media all and (max-width: 920px){
+           flex-direction: column;
+           margin-top: 200px;
+    }
     
     &__content{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 30vh;
+
+    @media all and (max-width: 920px){
+        align-items: center;
+        margin-bottom: 50px;
+        }
     }
 
-    // img{
-    //     margin-top: 20px;
-    // }
 }
 
 .job__list{
@@ -31,17 +38,21 @@
         background-color: $primary__color;
         border-left: red 2px solid;
         animation: typing 5s steps(30) infinite;
+        @media all and (max-width: 920px){
+           
+        }
     }
 }
+
 
 @keyframes typing {
     100%{
         left: 100%;
-        width: 100px;
+        width: 1px;
     }
     
     50%{
         left: 100%;
-        width: 100px;
+        width: 1px;
     }
 }

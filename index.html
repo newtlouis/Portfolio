@@ -16,16 +16,16 @@
 <body>
     <header>
         <nav>
-            <a href="">About me</a>
-            <a href="">Projects</a>
-            <a href="">Contact me</a>
+            <a class='trigger_scrollToAboutMe'href="">About me</a>
+            <a class='trigger_scrollToProjects' href="">Projects</a>
+            <a class='trigger_scrollToContacts' href="">Contact me</a>
         </nav>
     </header>
 
     <div data-scroll-container>
         <main>
             <section data-scroll-section class="introduction">
-                <div class="introduction__content">
+                <div class="introduction__content" id="aboutMe">
                     <p class="hello">Hello, my name is</p>
                     <h1 class="name">Louis Michel</h1>
                     <p class="job">And I am a <span class="job__list">Full Stack Developper.</span></p>
@@ -95,10 +95,11 @@
                 </div>
             </section>
 
-            <section data-scroll-section class="projects">
+            <section data-scroll-section class="projects" id="projects">
                 <ul>
                     <li class="projects__title">
-                        <a href='https://newtlouis.github.io/Reservia--site-web/' target='_blank' rel="noopener">Reservia</a>
+                        <a href='https://newtlouis.github.io/Reservia--site-web/' target='_blank'
+                            rel="noopener">Reservia</a>
                     </li>
                     <li class="projects__preview">
                         <video autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">

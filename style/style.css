@@ -277,6 +277,16 @@ nav {
           align-items: center;
 }
 
+@media all and (max-width: 920px) {
+  .introduction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 200px;
+  }
+}
+
 .introduction__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,6 +298,15 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 30vh;
+}
+
+@media all and (max-width: 920px) {
+  .introduction__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .job__list {
@@ -311,22 +330,22 @@ nav {
 @-webkit-keyframes typing {
   100% {
     left: 100%;
-    width: 100px;
+    width: 1px;
   }
   50% {
     left: 100%;
-    width: 100px;
+    width: 1px;
   }
 }
 
 @keyframes typing {
   100% {
     left: 100%;
-    width: 100px;
+    width: 1px;
   }
   50% {
     left: 100%;
-    width: 100px;
+    width: 1px;
   }
 }
 /*# sourceMappingURL=style.css.map */
