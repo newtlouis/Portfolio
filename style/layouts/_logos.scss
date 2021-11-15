@@ -56,10 +56,16 @@
 
     &__left{
         left: 300px;
+        @media all and (max-width: 1000px){
+            left: 0;
+        }
     }
 
     &__right{
         right: 300px;
+        @media all and (max-width: 1000px){
+            right: 0;
+        }
     }
 
 }

@@ -9,6 +9,10 @@ html {
   background-color: #ffa600;
 }
 
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -52,9 +56,15 @@ h2 {
   z-index: 2;
 }
 
+@media all and (max-width: 1000px) {
+  .block {
+    display: none;
+  }
+}
+
 .block__left {
   bottom: 700px;
-  right: 600px;
+  right: 570px;
 }
 
 .block__right {
@@ -66,16 +76,37 @@ h2 {
   position: absolute;
   z-index: 100;
   color: white;
-  font-size: 150px;
+  font-size: 130px;
   bottom: 160px;
+}
+
+@media all and (max-width: 1000px) {
+  .textBlock {
+    color: #3d3d3c;
+    position: relative;
+    bottom: 0;
+    font-size: 40px;
+  }
 }
 
 .textBlock__left {
   left: 1350px;
 }
 
+@media all and (max-width: 1000px) {
+  .textBlock__left {
+    left: 0;
+  }
+}
+
 .textBlock__right {
   right: 1400px;
+}
+
+@media all and (max-width: 1000px) {
+  .textBlock__right {
+    left: 0;
+  }
 }
 
 footer {
@@ -92,14 +123,14 @@ footer {
 }
 
 footer i {
-  font-size: 300px;
+  font-size: 20vw;
   color: #3d3d3c;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 footer i:hover {
-  font-size: 350px;
+  font-size: 25vw;
   color: white;
 }
 
@@ -260,8 +291,20 @@ nav {
   left: 300px;
 }
 
+@media all and (max-width: 1000px) {
+  .logos__list__left {
+    left: 0;
+  }
+}
+
 .logos__list__right {
   right: 300px;
+}
+
+@media all and (max-width: 1000px) {
+  .logos__list__right {
+    right: 0;
+  }
 }
 
 .introduction {
@@ -277,7 +320,7 @@ nav {
           align-items: center;
 }
 
-@media all and (max-width: 920px) {
+@media all and (max-width: 1100px) {
   .introduction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -300,7 +343,7 @@ nav {
   height: 30vh;
 }
 
-@media all and (max-width: 920px) {
+@media all and (max-width: 1100px) {
   .introduction__content {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -320,7 +363,7 @@ nav {
   left: 0;
   top: 5px;
   height: 100%;
-  width: 350px;
+  width: 400px;
   background-color: #ffa600;
   border-left: red 2px solid;
   -webkit-animation: typing 5s steps(30) infinite;

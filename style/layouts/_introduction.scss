@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: center;
 
-    @media all and (max-width: 920px){
+    @media all and (max-width: 1100px){
            flex-direction: column;
            margin-top: 200px;
     }
@@ -16,7 +16,7 @@
     justify-content: space-around;
     height: 30vh;
 
-    @media all and (max-width: 920px){
+    @media all and (max-width: 1100px){
         align-items: center;
         margin-bottom: 50px;
         }
@@ -34,7 +34,7 @@
         left: 0;
         top: 5px;
         height: 100%;
-        width: 350px;
+        width: 400px;
         background-color: $primary__color;
         border-left: red 2px solid;
         animation: typing 5s steps(30) infinite;

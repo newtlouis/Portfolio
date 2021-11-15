@@ -6,13 +6,13 @@ footer{
     margin: 300px 0;
 
     i{
-        font-size: 300px;
+        font-size: 20vw;
         color: $secondary__color;
         transition: all 0.2s ease-in-out;
 
 
         &:hover{
-            font-size: 350px;
+            font-size: 25vw;
             color: $tertiary__color;
         }
     }
