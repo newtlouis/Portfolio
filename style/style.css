@@ -243,6 +243,24 @@ nav a:hover {
   border-bottom: 5px solid #bebebe;
 }
 
+.title__fixed {
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  .title__fixed {
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .title__fixed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .logos {
   position: relative;
   padding: 20px;
@@ -272,6 +290,13 @@ nav a:hover {
   margin: 5px 25px 30px 25px;
 }
 
+@media all and (max-width: 1000px) {
+  .logos i {
+    font-size: 20vw;
+    margin: 5px 10px 10px 10px;
+  }
+}
+
 .logos__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,6 +310,18 @@ nav a:hover {
   margin-bottom: 200px;
 }
 
+@media all and (max-width: 850px) {
+  .logos__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .img {
   width: 600px;
   height: 400px;
@@ -296,6 +333,13 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media all and (max-width: 1000px) {
+  .img {
+    width: 90vw;
+    height: 50vh;
+  }
 }
 
 .tech {
