@@ -1,8 +1,27 @@
 nav{
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    height: 60px;
     z-index: 10;
     position: relative;
+    overflow: hidden;
+    white-space: nowrap;
     background-color: $secondary__color;
+    & span {
+        font-size: 2em;
+        color: rgb(190, 190, 190);
+    }
+    & a {
+font-size: 25px;
+        text-decoration: none;
+        color: rgb(190, 190, 190);
+        font-weight: bolder;
+        margin: auto;
+        transition: all .10s ease-in;
+        &:hover{
+            border-bottom: 5px solid rgb(190, 190, 190);
+            ;
+        }
+    }
+    
 }

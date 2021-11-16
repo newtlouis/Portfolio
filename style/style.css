@@ -216,10 +216,31 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 10px;
+  height: 60px;
   z-index: 10;
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
   background-color: #3d3d3c;
+}
+
+nav span {
+  font-size: 2em;
+  color: #bebebe;
+}
+
+nav a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #bebebe;
+  font-weight: bolder;
+  margin: auto;
+  -webkit-transition: all .10s ease-in;
+  transition: all .10s ease-in;
+}
+
+nav a:hover {
+  border-bottom: 5px solid #bebebe;
 }
 
 .logos {
