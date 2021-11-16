@@ -11,22 +11,36 @@ a{
 .hello{
     color: $tertiary__color;
     font-size: 30px;
+    @media all and(max-width:330px){
+        font-size: 20px;
+    }
 }
 
 .name{
     color: $tertiary__color;
     font-size: 50px;
     font-weight: bolder;
+    @media all and(max-width:330px){
+        font-size: 30px;
+    }
 }
 
 .job{
     color: $tertiary__color;
     font-size: 30px;
+    text-align: center;
+
+    @media all and(max-width:330px){
+        font-size: 20px;
+    }
 
     &__list{
         font-weight: bolder;
         font-size: 35px;
         color: rgb(219, 0, 0);
+        @media all and(max-width:330px){
+            font-size: 25px;
+        }
 
     }
 }

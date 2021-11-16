@@ -24,21 +24,46 @@ a {
   font-size: 30px;
 }
 
+@media all and (max-width: 330px) {
+  .hello {
+    font-size: 20px;
+  }
+}
+
 .name {
   color: white;
   font-size: 50px;
   font-weight: bolder;
 }
 
+@media all and (max-width: 330px) {
+  .name {
+    font-size: 30px;
+  }
+}
+
 .job {
   color: white;
   font-size: 30px;
+  text-align: center;
+}
+
+@media all and (max-width: 330px) {
+  .job {
+    font-size: 20px;
+  }
 }
 
 .job__list {
   font-weight: bolder;
   font-size: 35px;
   color: #db0000;
+}
+
+@media all and (max-width: 330px) {
+  .job__list {
+    font-size: 25px;
+  }
 }
 
 h2 {
@@ -395,6 +420,16 @@ nav a:hover {
   }
 }
 
+@media all and (max-width: 640px) {
+  .introduction {
+    font-size: 20px;
+  }
+  .introduction__photo img {
+    width: 90vw;
+    margin-right: 5vw;
+  }
+}
+
 .introduction__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,6 +468,12 @@ nav a:hover {
   border-left: red 2px solid;
   -webkit-animation: typing 5s steps(30) infinite;
           animation: typing 5s steps(30) infinite;
+}
+
+@media all and (max-width: 650px) {
+  .job__list::after {
+    display: none;
+  }
 }
 
 @-webkit-keyframes typing {

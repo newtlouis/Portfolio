@@ -6,9 +6,19 @@
     align-items: center;
 
     @media all and (max-width: 1100px){
-           flex-direction: column;
-           margin-top: 200px;
+        flex-direction: column;
+        margin-top: 200px;
     }
+    @media all and (max-width: 640px){
+        font-size: 20px;
+
+        &__photo img{
+            width: 90vw;
+            margin-right: 5vw;
+        }
+    }
+
+    
     
     &__content{
     display: flex;
@@ -21,6 +31,8 @@
         margin-bottom: 50px;
         }
     }
+
+  
 
 }
 
@@ -38,8 +50,8 @@
         background-color: $primary__color;
         border-left: red 2px solid;
         animation: typing 5s steps(30) infinite;
-        @media all and (max-width: 920px){
-           
+        @media all and (max-width: 650px){
+           display: none;
         }
     }
 }
