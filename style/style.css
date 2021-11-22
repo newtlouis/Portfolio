@@ -186,7 +186,7 @@ ul {
 .projects__title:hover + .projects__preview {
   visibility: visible;
   opacity: 1;
-  height: 44vh;
+  height: 60vh;
 }
 
 .projects__preview {
@@ -221,10 +221,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.projects__preview video {
-  border: 25px solid white;
 }
 
 li a {
