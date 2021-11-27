@@ -58,3 +58,13 @@ li a{
     }
     
 
+#projects__link{
+    color: white;
+    background: $primary__color;
+    margin-left :20vw;
+    text-transform: capitalize;
+    transition: all .10s ease-in;
+    &:hover{
+        border-bottom: 5px solid white;
+    }
+}
