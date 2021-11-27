@@ -507,6 +507,10 @@ nav a:hover {
   }
 }
 
+.tabs {
+  margin-top: 30px;
+}
+
 .list {
   padding: 0;
   margin: 0;
